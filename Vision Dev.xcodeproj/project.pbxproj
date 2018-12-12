@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		4C237C4B1F8800D9007F70BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C237C4A1F8800D9007F70BC /* AppDelegate.swift */; };
-		4C237C4D1F8800D9007F70BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C237C4C1F8800D9007F70BC /* ViewController.swift */; };
+		4C237C4D1F8800D9007F70BC /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C237C4C1F8800D9007F70BC /* CameraViewController.swift */; };
 		4C237C501F8800D9007F70BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C237C4E1F8800D9007F70BC /* Main.storyboard */; };
 		4C237C521F8800D9007F70BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C237C511F8800D9007F70BC /* Assets.xcassets */; };
 		4C237C551F8800D9007F70BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C237C531F8800D9007F70BC /* LaunchScreen.storyboard */; };
+		4C41F73E1F8A410F00E50287 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C41F73D1F8A410F00E50287 /* AVFoundation.framework */; };
+		4C41F7401F8A4A7C00E50287 /* RoundShadowImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41F73F1F8A4A7C00E50287 /* RoundShadowImage.swift */; };
+		4C41F7431F8AD52200E50287 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4C41F7411F8AD36000E50287 /* Inceptionv3.mlmodel */; };
+		4CAE1A311F891628008028B6 /* RoundShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE1A301F891628008028B6 /* RoundShadowView.swift */; };
+		4CAE1A331F8917BA008028B6 /* RoundShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE1A321F8917BA008028B6 /* RoundShadowButton.swift */; };
+		4CCA5A6D1FA87EEB00647366 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA5A6C1FA87EEB00647366 /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C237C471F8800D9007F70BC /* Vision Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vision Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C237C4A1F8800D9007F70BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C237C4C1F8800D9007F70BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C237C4C1F8800D9007F70BC /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		4C237C4F1F8800D9007F70BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C237C511F8800D9007F70BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C237C541F8800D9007F70BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C237C561F8800D9007F70BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C41F73D1F8A410F00E50287 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4C41F73F1F8A4A7C00E50287 /* RoundShadowImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundShadowImage.swift; sourceTree = "<group>"; };
+		4C41F7411F8AD36000E50287 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		4CAE1A301F891628008028B6 /* RoundShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundShadowView.swift; sourceTree = "<group>"; };
+		4CAE1A321F8917BA008028B6 /* RoundShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundShadowButton.swift; sourceTree = "<group>"; };
+		4CCA5A6C1FA87EEB00647366 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C41F73E1F8A410F00E50287 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C055D4B1F89561800A3BBB5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C41F7411F8AD36000E50287 /* Inceptionv3.mlmodel */,
+				4CCA5A6C1FA87EEB00647366 /* SqueezeNet.mlmodel */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		4C237C3E1F8800D9007F70BC = {
 			isa = PBXGroup;
 			children = (
 				4C237C491F8800D9007F70BC /* Vision Dev */,
 				4C237C481F8800D9007F70BC /* Products */,
+				4C41F73C1F8A410F00E50287 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +77,50 @@
 		4C237C491F8800D9007F70BC /* Vision Dev */ = {
 			isa = PBXGroup;
 			children = (
+				4C055D4B1F89561800A3BBB5 /* Resources */,
+				4C237C5E1F880B34007F70BC /* Model */,
+				4C237C5D1F880B2E007F70BC /* View */,
+				4C237C5C1F880B20007F70BC /* Controller */,
 				4C237C4A1F8800D9007F70BC /* AppDelegate.swift */,
-				4C237C4C1F8800D9007F70BC /* ViewController.swift */,
 				4C237C4E1F8800D9007F70BC /* Main.storyboard */,
 				4C237C511F8800D9007F70BC /* Assets.xcassets */,
 				4C237C531F8800D9007F70BC /* LaunchScreen.storyboard */,
 				4C237C561F8800D9007F70BC /* Info.plist */,
 			);
 			path = "Vision Dev";
+			sourceTree = "<group>";
+		};
+		4C237C5C1F880B20007F70BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C237C4C1F8800D9007F70BC /* CameraViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C237C5D1F880B2E007F70BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4CAE1A301F891628008028B6 /* RoundShadowView.swift */,
+				4CAE1A321F8917BA008028B6 /* RoundShadowButton.swift */,
+				4C41F73F1F8A4A7C00E50287 /* RoundShadowImage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C237C5E1F880B34007F70BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C41F73C1F8A410F00E50287 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C41F73D1F8A410F00E50287 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,7 +150,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = SK21;
 				TargetAttributes = {
 					4C237C461F8800D9007F70BC = {
@@ -136,8 +195,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C237C4D1F8800D9007F70BC /* ViewController.swift in Sources */,
+				4C41F7431F8AD52200E50287 /* Inceptionv3.mlmodel in Sources */,
+				4CAE1A331F8917BA008028B6 /* RoundShadowButton.swift in Sources */,
+				4C237C4D1F8800D9007F70BC /* CameraViewController.swift in Sources */,
+				4CCA5A6D1FA87EEB00647366 /* SqueezeNet.mlmodel in Sources */,
 				4C237C4B1F8800D9007F70BC /* AppDelegate.swift in Sources */,
+				4C41F7401F8A4A7C00E50287 /* RoundShadowImage.swift in Sources */,
+				4CAE1A311F891628008028B6 /* RoundShadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +241,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -184,6 +249,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -234,6 +300,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -241,6 +308,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -273,28 +341,42 @@
 		4C237C5A1F8800D9007F70BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ARCHS[sdk=iphoneos11.0]" = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5W7HYH55P7;
 				INFOPLIST_FILE = "Vision Dev/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sk21.Vision-Dev";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sk221.Vision-Dev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				"VALID_ARCHS[sdk=iphoneos11.0]" = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
 		4C237C5B1F8800D9007F70BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ARCHS[sdk=iphoneos11.0]" = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5W7HYH55P7;
 				INFOPLIST_FILE = "Vision Dev/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sk21.Vision-Dev";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sk221.Vision-Dev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				"VALID_ARCHS[sdk=iphoneos11.0]" = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
